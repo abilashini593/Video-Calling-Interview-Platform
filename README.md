@@ -99,3 +99,14 @@ Real-time peer-to-peer connection
 High-quality audio/video
 
 Secure data transfer
+
+Signaling server integration (in progress)
+
+🔄 To-Do / Enhancements
+
+✍️ Mute / Unmute
+🎥 Video On / Off toggle
+💬 In-call chat
+📅 Interview scheduling
+🧪 Add recording module
+📊 Dashboard for interviewers
