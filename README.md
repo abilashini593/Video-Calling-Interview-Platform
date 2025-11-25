@@ -1,107 +1,105 @@
-Video Calling Interview Platform
+🚀 Video Calling Interview Platform
 
-A modern, responsive interview platform that enables real-time video calling, candidate authentication, and an interactive UI to simulate real interview environments.
-Built with a strong focus on UI/UX, secure user onboarding, and seamless communication using React, Clerk Auth, TailwindCSS v4, and DaisyUI.
+A modern, fully responsive real-time interview platform designed to simulate professional interview environments with video calling, secure authentication, and a clean, elegant UI.
+Built using React, TailwindCSS v4, DaisyUI, and Clerk, this platform brings together performance, simplicity, and a beautiful user experience.
 
-🌟 Features
-🔐 User Authentication (Clerk)
+🎯 Key Features
+🔐 Authentication with Clerk
 
 Secure login & signup
 
-Session & token management
+Smooth user onboarding
 
-Role-based access support
+Session handling & protected routes
 
-🎥 Video Calling
+🎥 Real-Time Video Calling
 
-One-to-one interview video sessions
+High-quality one-to-one video interviews
 
-Uses WebRTC (or your planned integration)
+Powered by WebRTC (integration module)
 
-Real-time audio/video synchronization
+Low-latency audio/video transmission
 
-🎨 Modern UI (TailwindCSS v4 + DaisyUI)
+🎨 Stunning UI with TailwindCSS v4 + DaisyUI
 
-Pre-built aesthetic components
+Fully responsive
 
-Fully responsive design
+Themed design (🌲 Forest theme)
 
-Theme support (Forest theme enabled)
+Beautiful pre-built components
 
-🛠️ Modular Architecture
+Smooth modern styling
 
-Clean directory structure
+⚙️ Clean Architecture
 
-Reusable UI components
+Organized folder structure
 
-Scalable and easy to extend
+Reusable components
 
-🔄 Future Enhancements
-
-Recording interview sessions
-
-Chat during interview
-
-Coding editor (Monaco) inside interview
-
-Interview scheduling module
-
-Admin dashboard
+Scalable for future features
 
 🛠️ Tech Stack
 Frontend
 
-React (Vite)
+⚛️ React (Vite)
 
-TailwindCSS v4
+🎨 TailwindCSS v4
 
-DaisyUI
+🌈 DaisyUI
 
-React Router
+🔐 Clerk Auth
 
-Clerk (Authentication)
+🔄 React Query
 
-React Query (Data fetching)
+🧭 React Router
 
-Backend (Planned / In Progress)
+Backend (Planned)
 
-Node.js + Express
+Node.js / Express
 
-WebRTC signaling
+WebRTC Signaling
 
-Socket.IO (optional for RTC events)
+Socket.IO
+
 ▶️ Getting Started
-1. Clone the repository
+1️⃣ Clone the Repository
 git clone https://github.com/abilashini593/Video-Calling-Interview-Platform.git
 cd Video-Calling-Interview-Platform
 
-2. Install dependencies
+2️⃣ Install Dependencies
 npm install
 
-3. Create a .env file
+3️⃣ Add Environment Variables
+
+Create a .env file:
+
 VITE_CLERK_PUBLISHABLE_KEY=your_key_here
 
-4. Start the development server
+4️⃣ Run the Project
 npm run dev
 
-🎥 Video Call Module
+🎥 Video Calling Module
 
-The app uses a WebRTC-based setup (or your upcoming integration) to create seamless and high-quality video calls ideal for interview environments.
+A WebRTC-powered module designed for:
 
-🚀 To-Do / Enhancements
+Real-time peer-to-peer connection
 
-🎤 Add mute/unmute controls
+High-quality video & audio
 
-🎥 Enable interview recording
+Secure, direct data transfer
 
-💬 Add real-time chat inside video screen
+(Integration module under development)
 
-📅 Add scheduling system
+🧩 Roadmap
 
-🧑‍💼 Add interviewer dashboard
+🎤 Mute / Unmute audio
 
-🔧 Add error handling & notifications
+🎥 Video on/off toggle
 
-⭐ About This Project
+💬 Chat inside video screen
 
-This project is part of a full-stack development journey focused on building production-ready applications with authentication, real-time communication, responsive UI, and scalable design patterns.
+📅 Schedule interviews
+
+🧪 Add interview recording
+
+📊 Dashboard for interviewers
