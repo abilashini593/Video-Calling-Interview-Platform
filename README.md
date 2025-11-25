@@ -1,112 +1,85 @@
-Video Calling Interview Platform
+# 🚀 Video Calling Interview Platform
 
-A real-time video interview web app that enables users to conduct one-to-one video calls with secure authentication and a clean, responsive UI. Built with React, TailwindCSS v4, DaisyUI, and Clerk, with a focus on clean architecture and smooth user experience.
+A real-time video interview web app that enables users to conduct one-to-one video calls with secure authentication and a clean, responsive UI.  
+Built with **React, TailwindCSS v4, DaisyUI, and Clerk**, focusing on clean architecture and smooth user experience.
 
-Features
+---
 
-🔐 User Authentication (Clerk)
+## ⭐ Features
 
-Secure login & signup
+### 🔐 User Authentication (Clerk)
+- Secure login & signup  
+- Smooth user onboarding  
+- Session handling  
+- Protected routes  
 
-Session handling
+### 🎥 Real-Time Video Calling (WebRTC)
+- High-quality video/audio  
+- Peer-to-peer connection  
+- Low-latency streaming  
 
-Protected routes
+### 🎨 UI (TailwindCSS v4 + DaisyUI)
+- Fully responsive  
+- Pre-built beautiful components  
+- Clean interview-focused design  
 
-🎥 Real-Time Video Calling (WebRTC)
+---
 
-High-quality video/audio
+## 🛠️ Tech Stack
 
-Peer-to-peer connection
+### **Frontend**
+- React (Vite)  
+- TailwindCSS v4  
+- DaisyUI  
+- Clerk Auth  
+- React Query  
+- React Router  
 
-Low-latency streaming
+### **Backend (Planned)**
+- Node.js / Express  
+- WebRTC Signaling  
+- Socket.IO  
 
-🎨 UI (TailwindCSS v4 + DaisyUI)
+---
 
-Fully responsive
+## ▶️ Getting Started
 
-Pre-built beautiful components
-
-Clean interview-focused design
-
-🧭 Routing & State
-
-React Router
-
-React Query
-
-📁 Clean Architecture
-
-Organized folder structure
-
-Reusable components
-
-Easy to scale with future features
-
-🛠️ Tech Stack
-
-Frontend
-
-React (Vite)
-
-TailwindCSS v4
-
-DaisyUI
-
-Clerk Authentication
-
-React Router
-
-React Query
-
-Backend (Upcoming)
-
-Node.js + Express
-
-WebRTC Signaling
-
-Socket.IO
-
-▶️ Getting Started
-
-Clone the repository
-
+### 1️⃣ Clone the Repository
+```bash
 git clone https://github.com/abilashini593/Video-Calling-Interview-Platform.git
 cd Video-Calling-Interview-Platform
-
-
-Install dependencies
-
+2️⃣ Install Dependencies
 npm install
 
+3️⃣ Add Environment Variables
 
-Add environment variables
-Create a .env file:
+Create a .env file with:
 
 VITE_CLERK_PUBLISHABLE_KEY=your_key_here
 
-
-Start the development server
-
+4️⃣ Run the Project
 npm run dev
-
 
 🎥 Video Calling Module
 
-The module is built using WebRTC and supports:
+The WebRTC module handles:
 
 Real-time peer-to-peer connection
 
-High-quality audio/video
+High-quality video & audio
 
-Secure data transfer
+Secure direct data transfer
 
-Signaling server integration (in progress)
+🧩 Roadmap
 
-🔄 To-Do / Enhancements
+🎤 Mute / Unmute audio
 
-✍️ Mute / Unmute
-🎥 Video On / Off toggle
-💬 In-call chat
-📅 Interview scheduling
-🧪 Add recording module
+🎥 Toggle video on/off
+
+💬 Chat inside video screen
+
+📅 Schedule interviews
+
+🧪 Record interview session
+
 📊 Dashboard for interviewers
