@@ -1,5 +1,6 @@
 import { Code2Icon, LoaderIcon, PlusIcon } from "lucide-react";
 import { PROBLEMS } from "../data/problems";
+import { useAuth } from "@clerk/clerk-react";
 
 function CreateSessionModal({
   isOpen,
@@ -9,6 +10,7 @@ function CreateSessionModal({
   onCreateRoom,
   isCreating,
 }) {
+  const { userId } = useAuth();
   const problems = Object.values(PROBLEMS);
 
   if (!isOpen) return null;

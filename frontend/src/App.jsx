@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { useUser } from "@clerk/clerk-react";
+import { useAuth } from "@clerk/clerk-react";
 import { Navigate, Route, Routes } from "react-router";
 import HomePage from "./pages/HomePage";
 
@@ -14,7 +15,7 @@ function App() {
 
 useEffect(() => {
   if (isSignedIn && user) {
-    fetch("http://localhost:5000/api/users/create", {
+    fetch("http://localhost:3000/api/users/create", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

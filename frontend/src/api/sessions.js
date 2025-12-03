@@ -1,36 +1,58 @@
-
 import axiosInstance from "../lib/axios";
 
 export const sessionApi = {
-  createSession: async (data) => {
-    const response = await axiosInstance.post("/sessions", data);
+  createSession: async (data, token) => {
+    const response = await axiosInstance.post("/api/sessions", data, {
+      headers: {
+        Authorization: `Bearer ${token}`,
+      },
+    });
+
     return response.data;
   },
 
   getActiveSessions: async () => {
-    const response = await axiosInstance.get("/sessions/active");
+    const response = await axiosInstance.get("/api/sessions/active");
     return response.data;
   },
+
   getMyRecentSessions: async () => {
-    const response = await axiosInstance.get("/sessions/my-recent");
+    const response = await axiosInstance.get("/api/sessions/my-recent");
     return response.data;
   },
 
   getSessionById: async (id) => {
-    const response = await axiosInstance.get(`/sessions/${id}`);
+    const response = await axiosInstance.get(`/api/sessions/${id}`);
     return response.data;
   },
 
-  joinSession: async (id) => {
-    const response = await axiosInstance.post(`/sessions/${id}/join`);
+  joinSession: async (id, token) => {
+    const response = await axiosInstance.post(
+      `/api/sessions/${id}/join`,
+      {},
+      {
+        headers: { Authorization: `Bearer ${token}` },
+      }
+    );
     return response.data;
   },
-  endSession: async (id) => {
-    const response = await axiosInstance.post(`/sessions/${id}/end`);
+
+  endSession: async (id, token) => {
+    const response = await axiosInstance.post(
+      `/api/sessions/${id}/end`,
+      {},
+      {
+        headers: { Authorization: `Bearer ${token}` },
+      }
+    );
     return response.data;
   },
-  getStreamToken: async () => {
-    const response = await axiosInstance.get(`/chat/token`);
+
+  getStreamToken: async (token) => {
+    const response = await axiosInstance.get(`/api/chat/token`, {
+      headers: { Authorization: `Bearer ${token}` },
+    });
+
     return response.data;
   },
 };
