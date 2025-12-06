@@ -1,5 +1,5 @@
 import { StreamChat } from "stream-chat";
-import { StreamVideoClient } from "@stream-io/node-sdk";  // FIXED
+import { StreamVideoClient } from "@stream-io/node-sdk";
 import { ENV } from "./env.js";
 
 const apiKey = ENV.STREAM_API_KEY;
@@ -12,13 +12,13 @@ if (!apiKey || !apiSecret) {
 // Chat client
 export const chatClient = StreamChat.getInstance(apiKey, apiSecret);
 
-// Video client (IMPORTANT FIX)
+// Video client
 export const streamClient = new StreamVideoClient({
   apiKey,
   secret: apiSecret,
 });
 
-// Optional helpers
+// Sync user with Stream (chat)
 export const upsertStreamUser = async (userData) => {
   try {
     await chatClient.upsertUser(userData);

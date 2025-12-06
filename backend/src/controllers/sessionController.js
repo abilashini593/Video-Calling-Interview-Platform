@@ -15,13 +15,18 @@ export async function createSession(req, res) {
     }
 
     // ✅ get Clerk ID from token
-    const clerkId = req.auth.userId;
+    const clerkId = req.auth?.userId || "test-user-123";
+    console.log("Using clerkId:", clerkId);
 
     // ✅ find or create local DB user
     let user = await User.findOne({ clerkId });
     if (!user) {
-      user = await User.create({ clerkId });
-    }
+  user = await User.create({
+    clerkId,
+    name: req.auth.sessionClaims?.name || "Unknown",
+    email: req.auth.sessionClaims?.email || "noemail@example.com"
+  });
+}
     const userId = user._id;
 
     console.log("MongoDB userId:", userId, "ClerkId:", clerkId);

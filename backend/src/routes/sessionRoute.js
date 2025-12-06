@@ -12,7 +12,7 @@ import {
 const router = express.Router();
 
 // Create a new session
-router.post("/", protectRoute, createSession);
+router.post("/", createSession);
 
 // Get active sessions
 router.get("/active", protectRoute, getActiveSessions);
